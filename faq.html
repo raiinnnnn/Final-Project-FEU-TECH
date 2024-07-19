@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza hut</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <section class="flex">
+        <h2>PIZZA HUT</h2>
+        <a href="#home" class="logo"></a>
+
+        <nav class="navbar">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="order-btn" class="fas fa-box"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
+
+<!-- header section ends  -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>pizza-1 <span>( $3/- x 2 )</span></p>
+         <p>pizza 03 <span>( $2/- x 1 )</span></p>
+         <p>pizza 06 <span>( $4/- x 4 )</span></p>
+         <p>pizza 07 <span>( $2/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>Janick cabral</span> </p>
+         <p>number : <span>1234567890</span></p>
+         <p>address : <span>flat no. 123, bulding no. 2, malabon, Caloocan, PH - 400104</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>Kirby Ibis</span> </p>
+         <p>number : <span>1234567890</span></p>
+         <p>address : <span>flat no. 123, bulding no. 312, malabon, Caloocan, PH - 4002324</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>pizza-1 <span>( $3/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>pizza-3 <span>( $2/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>pizza-6 <span>( $4/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>pizza-7 <span>( $2/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+    <h1 class="heading">FAQ</h1>
+ 
+    <div class="accordion-container">
+ 
+       <div class="accordion active">
+          <div class="accordion-heading">
+             <span>how does it work?</span>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+             Visit the Website or App: Customers can access Pizza Hut's offerings through their official website or mobile app. These platforms provide a user-friendly interface for browsing the menu and selecting items.
+ 
+             .
+          </p>
+       </div>
+ 
+       <div class="accordion">
+          <div class="accordion-heading">
+             <span>how long does it take for delivery?</span>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+             Location: The distance between the Pizza Hut restaurant and the delivery address affects the delivery time. Urban areas with high population density may have quicker delivery times compared to rural or remote locations..
+          </p>
+       </div>
+ 
+       <div class="accordion">
+          <div class="accordion-heading">
+             <span>can I order for huge parties?</span>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+             Pizza Hut welcomes large orders for parties and events, offering a variety of pizzas, sides, and desserts to accommodate your guests' preferences. You can customize your order, choose from different sizes and flavors of pizzas, and often benefit from special deals for bulk orders. Ordering is convenient through their website, app, or by contacting your local restaurant directly.
+          </p>
+       </div>
+ 
+       <div class="accordion">
+          <div class="accordion-heading">
+             <span>how much protein it contains?</span>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+             The protein content in Pizza Hut pizzas varies depending on factors like size, crust type, and toppings chosen..
+          </p>
+       </div>
+ 
+ 
+       <div class="accordion">
+          <div class="accordion-heading">
+             <span>is it cooked with oil?</span>
+             <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+             Pizza Hut pizzas are typically prepared using oil as part of their cooking process. This includes oil used for preparing the pizza crust, toppings, and during the baking process to ensure proper cooking and flavor enhancement. Specific details about the type and amount of oil used can vary based on the pizza's ingredients and preparation method.
+          </p>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- faq section ends -->
+
+ <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <p>+123-456-7890</p>
+          <p>+111-222-3333</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>FisherMall, PH - 400104</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>00:09am to 00:10pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>Pizzahut@gmail.com</p>
+          <p>pizzahut@gmail.com</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="credit">
+       &copy; copyright @ 2022 by <span>novigrad</span> |
+    </div>
+ 
+ </section>
+ 
+ <!-- footer section ends -->
+
+
+ <!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
